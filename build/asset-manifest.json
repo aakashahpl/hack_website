@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Team-SRM_hackathon_site/static/css/main.b8962227.css",
+    "main.js": "/Team-SRM_hackathon_site/static/js/main.7f7bd091.js",
+    "static/media/2.png": "/Team-SRM_hackathon_site/static/media/2.b9baa83f4a2bee8758de.png",
+    "static/media/hack_laptop.png": "/Team-SRM_hackathon_site/static/media/hack_laptop.bc38c6c014bfebf92b6f.png",
+    "static/media/p2.png": "/Team-SRM_hackathon_site/static/media/p2.d9a8bc0c93fb3c037bd9.png",
+    "static/media/silkimg.png": "/Team-SRM_hackathon_site/static/media/silkimg.88059614e5c4b107b7c1.png",
+    "static/media/landingpgright.png": "/Team-SRM_hackathon_site/static/media/landingpgright.887bd2e881530f4e2df4.png",
+    "static/media/landingpgleft.png": "/Team-SRM_hackathon_site/static/media/landingpgleft.1f6d2b2ba17f2485a6f9.png",
+    "static/media/bluesilk.png": "/Team-SRM_hackathon_site/static/media/bluesilk.25d888f315aaf88f8147.png",
+    "static/media/3.png": "/Team-SRM_hackathon_site/static/media/3.b99408e41759d948dc3c.png",
+    "static/media/hacklogo.png": "/Team-SRM_hackathon_site/static/media/hacklogo.e0e41f1f2938072705eb.png",
+    "static/media/insta.png": "/Team-SRM_hackathon_site/static/media/insta.31a206a05cf8fba6d83b.png",
+    "static/media/1.png": "/Team-SRM_hackathon_site/static/media/1.730f9b04443c69a69d66.png",
+    "static/media/github.png": "/Team-SRM_hackathon_site/static/media/github.f58b68f79a69e836ea54.png",
+    "static/media/linkedin.png": "/Team-SRM_hackathon_site/static/media/linkedin.0cd9cf4bae860b8e77cf.png",
+    "static/media/twitter.png": "/Team-SRM_hackathon_site/static/media/twitter.3c359b31a5cdd5675fa5.png",
+    "static/media/mail.png": "/Team-SRM_hackathon_site/static/media/mail.829e4b5a8260104880a4.png",
+    "static/media/phone.png": "/Team-SRM_hackathon_site/static/media/phone.e82ffbf07a780540f26b.png",
+    "static/media/bars.png": "/Team-SRM_hackathon_site/static/media/bars.e03f862f328bf3c36d76.png",
+    "index.html": "/Team-SRM_hackathon_site/index.html",
+    "main.b8962227.css.map": "/Team-SRM_hackathon_site/static/css/main.b8962227.css.map",
+    "main.7f7bd091.js.map": "/Team-SRM_hackathon_site/static/js/main.7f7bd091.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8962227.css",
+    "static/js/main.7f7bd091.js"
+  ]
+}
