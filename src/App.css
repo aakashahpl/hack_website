@@ -1,0 +1,424 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Alegreya', serif;
+}
+
+.landing_Page {
+    font-family: 'Merriweather', serif;
+    background-origin: border-box;
+    background: url("./assets/landingpgright.png") right no-repeat
+    , url("./assets/landingpgleft.png") left no-repeat  ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.navbar {
+          flex: 0 1 0%;
+          display: flex;
+          justify-content: space-around;
+          background-color: #000;
+          color: white;
+          padding: 20px;
+
+}
+
+.navicon {
+    
+    position: relative;
+    top: 2px;
+    right: 2px;
+    display:none ;
+}
+
+.logo-and-name {
+    font-size: 2rem;
+    flex: 1 1 auto;
+}
+
+.section-links{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    align-items: center;
+}
+.aboutus-link,.events-link,.team-link,.contact-link {
+    cursor: pointer;
+   
+}
+.home {
+    flex: 1 1 auto;
+    font-size: 3.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.hack-home-logo {
+    height: 50vh;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+@media(max-width:750px){
+    .logo-and-name{
+        align-self: center;
+    }
+    .section-links{
+        display: none;
+    }
+    .navicon{
+        display: block;
+    }
+
+}
+
+
+@media(max-width:1350px){
+    .landing_Page {
+        background: url("./assets/landingpgright.png") top right no-repeat
+    , url("./assets/landingpgleft.png") top left no-repeat  ;
+        background-size:35%;
+        
+    }
+}
+
+@media(max-width:1150px){
+    .home{
+        font-size: 2.5rem;
+    }
+    .logo-and-name{
+        font-size: 1.75rem;
+    }
+    .section-links{
+        font-size: 1rem;
+    }
+
+}
+
+@media(max-width:950px){
+    .landing_Page{
+        background:black;
+    }
+    .logo-and-name{
+        font-size: 1.25rem;
+    }
+    .section-links{
+        font-size: 0.75rem;
+    }
+    .home{
+        font-size: 1.5rem;
+        
+    }
+    .hack-home-logo {
+        height: 40vh;
+        
+    }
+}
+
+@media(max-width:450px){
+    .home{
+        font-size: 1.1rem;
+    }
+ 
+}
+
+.bar-nav-links{
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    padding-top: 100px;
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.progress{
+    background-color:red;
+    height:50px;
+    position:absolute;
+    
+}
+
+
+
+.Events-section{
+   
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    color:grey;
+    padding-top: 50px;
+    background: url("./assets/silkimg.png") top 5% left no-repeat,
+                url("./assets/bluesilk.png") bottom 65% right no-repeat,
+                url("./assets/p2.png")  bottom right no-repeat;
+}
+
+.event-info{
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+
+.events_section_title {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-weight: bold;
+   
+}
+
+.event {
+   display:flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.event_image{
+    height: 500px;
+    
+}
+
+.event-content {
+    font-size: 3.5rem;
+    font-weight: 1000; 
+
+}
+
+
+@media(max-width:1450px){
+    .event_image{
+        height: 350px;       
+     }
+    .event-info{
+        font-size: 1.5rem;
+    }    
+}
+
+@media(max-width:1130px){
+    .event_image{
+        height: 350px;       
+     }
+     .Events-section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .event{
+        
+       
+    }
+}
+@media(max-width:680px){
+    .event_image{
+        height: 200px;
+    }
+    .event-content{
+        font-size: 2rem;
+    }
+    .Events-section {
+        padding-left: 0px;
+        padding-right: 0px;
+        background-size: 80%;
+    }
+    .event-info{
+        font-size: 1rem;
+        border: #f5f5f5 solid;       
+    }
+}
+
+
+
+/*Our domains css styles*/
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+h2{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .domainhead{
+      font-size: 2rem;
+      margin: 0px;
+  }
+  
+  .domaininfo{
+      text-align: center;
+      font-size: 1.15rem;
+      margin: 0px;
+  }
+
+.card {
+    border: 2px solid transparent;
+    padding: 100px;
+    box-sizing: border-box;
+    background: rgb(66, 81, 216);
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0;
+  }
+
+.card:hover{
+    border-color:#f5f5f5;
+    transform: scale(1.1);
+
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+  }
+
+
+
+  .footer-container {
+      border-top: #f5f5f5 solid;
+      display: flex;
+      text-align: left;
+     background-color: #0C0527;
+  }
+
+  
+
+  .logo-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section {
+    display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .follow-section { 
+    display: flex;
+    align-items: flex-start;
+     flex-direction: column;   
+    flex-grow: 1;
+  }
+
+  .social-media-links {
+      display: flex;
+  }
+
+  .mail-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.25rem;
+  }
+
+  .phone-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.25rem;
+  }
+
+
+  .copyright {
+      font-size: 1rem;
+  }
+
+  @media(max-width:860px){
+      .copyright {
+          font-size: 0.75rem;
+      }
+      .mail-logo{
+         font-size: 1rem;
+      }
+      .phone-logo {
+         font-size: 1rem;
+      }
+  }
+
+  @media(max-width:600px){
+      .logo{
+          height: 20px;
+      }
+      .copyright {
+        font-size: 0.5rem;
+    }
+    .mail-logo{
+       font-size: 0.75rem;
+    }
+    .phone-logo {
+       font-size: 0.75rem;
+    }
+    .footer-logo {
+        height: 80px;
+    }
+    .footer-head {
+        font-size: 1rem;
+    }
+  }
