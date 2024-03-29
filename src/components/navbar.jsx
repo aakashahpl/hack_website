@@ -1,5 +1,6 @@
 import navicon from '../assets/bars.png'
-import { VscChromeClose } from "react-icons/vsc";
+// import { VscChromeClose } from "react-icons/vsc";
+import { IoClose } from "react-icons/io5";
 function Navbar(){
     function navclick(){
     
@@ -41,7 +42,7 @@ function Navbar(){
             <div className="logo-and-name">TEAM SRM HACKATHON</div>
             <img src={navicon} className="navicon" alt='navigation bars' height='30px' onClick={navclick}/>
             <div className='bar-nav-links hide'>
-                <button className='closenav' onClick={navclose}><VscChromeClose size={16} /></button>
+                <button className='closenav' onClick={navclose}><IoClose size={20} /></button>
                 <div className="aboutus-link" onClick={about_scroll}>ABOUT US</div>
                 <div className="events-link" onClick={event_scroll}>OUR EVENTS</div>
                 <div className="team-link" onClick={domain_scroll}>OUR DOMAINS</div>

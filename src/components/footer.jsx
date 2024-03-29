@@ -18,8 +18,8 @@ function Footer(){
             <div className="follow-section">
                 <h2 className="footer-head">FOLLOW US:</h2>
                 <div className="social-media-links">
-                <div className="insta-logo"> <img src={insta} alt="insta-icon" className="insta logo" height="50px"/></div>
-                <div className="linkedin-logo"> <img src={linkedin} alt="linkedin-icon" className="linkedin logo" height="50px"/></div>
+                <a className="insta-logo" href="https://www.instagram.com/srm_hackathon"> <img src={insta} alt="insta-icon" className="insta logo" height="50px"/></a>
+                <a className="linkedin-logo" href="https://www.linkedin.com/company/srmhackathon/" > <img src={linkedin} alt="linkedin-icon" className="linkedin logo" height="50px"/></a>
                 <div className="twitter-logo"> <img src={twitter} alt="twitter-icon" className="twitter logo" height="50px"/></div>
                 <div className="github-logo"> <img src={github} alt="github-icon" className="github logo" height="50px"/></div>
                 </div>

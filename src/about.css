@@ -14,6 +14,15 @@
    
 }
 
+.aboutcode_image {
+   height: 100vh;
+   width: 115rem;
+   background-image: url("./assets/hack_laptop.png");
+   background-position: center;
+   background-size: contain; /* or specify size in pixels like background-size: 50% 50%; */
+   background-repeat: no-repeat; /* This ensures that the image is not repeated */
+}
+
 .codeimg {
    width: 100%;
 }
@@ -78,6 +87,14 @@
    }
    .about_background_image{
        max-width: 100%;
+   }
+   .aboutcode_image {
+      height: 50vh;
+      width: 24rem;
+      background-image: url("./assets/hack_code_mobile.png");
+      background-position: center;
+      background-size: contain; /* or specify size in pixels like background-size: 50% 50%; */
+      background-repeat: no-repeat; /* This ensures that the image is not repeated */
    }
 
 }

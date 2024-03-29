@@ -18,7 +18,7 @@ function Image({id,text}) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 150);
-  const opacity=useTransform(y,[100,-120],[0.3,1])
+  const opacity=useTransform(y,[100,-120],[0,1])
 
 
   return (
