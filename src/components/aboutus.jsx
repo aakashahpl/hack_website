@@ -5,9 +5,9 @@ import {
 function Aboutus() {
     return (
         <div className="About-section">
-            <motion.div className="about_section_title" initial={{x:-500}} whileInView={{x:0}} transition={{duration:1,type:'spring'}}>ABOUT US</motion.div>
+            <motion.div className="about_section_title" initial={{x:-200}} whileInView={{x:0}} transition={{duration:1,type:'spring'}}>ABOUT US</motion.div>
             
-            <motion.div className="about_section_content" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.3,duration:2.5}} viewport={{amount:1}}>
+            <motion.div className="about_section_content" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.3,duration:1.2}} viewport={{amount:0.5}}>
                 SRM Hackathon, which was earlier known as IT Association is one
                 of the most active associations under School of Computing. SRM
                 Hackathon aims to upskill all students and ultimately make them

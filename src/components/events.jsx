@@ -10,16 +10,15 @@ import {
   MotionValue
 } from "framer-motion";
 
-function useParallax(value: MotionValue<number>, distance: number) {
+function useParallax(value, distance) {
   return useTransform(value, [0, 1], [-distance, distance]);
 }
 
 function Image({id,text}) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
- 
-  const opacity=useTransform(y,[100,-120],[0,1])
+  const y = useParallax(scrollYProgress, 150);
+  const opacity=useTransform(y,[100,-120],[0.3,1])
 
 
   return (
@@ -38,7 +37,7 @@ function Image({id,text}) {
 export default function Events() {
   return (
     <div className="Events-section background--custom">
-      <motion.h1  initial={{x:-500}} whileInView={{x:0}} transition={{duration:1,type:'spring'}}>OUR EVENTS</motion.h1>
+      <motion.h1  initial={{x:-200}} whileInView={{x:0}} transition={{duration:1,type:'spring'}} className="events_section_title">OUR EVENTS</motion.h1>
       <Image id = {pic} text="#Hackathon"/>
       <Image id = {pic2} text="#Semicolon"/>
       <Image id = {pic3} text="#Ideathon"/>

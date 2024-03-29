@@ -6,19 +6,21 @@ import Aboutcode from "./components/aboutcode"
 import Newgallery from './components/newgalley';
 import Footer from './components/footer';
 import Aboutus from './components/aboutus';
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 function App() {
   return (
-    <div className="App">
-         
-         <Landing_page/>
-         <Aboutus/>
-         <Aboutcode/>
-         <Events/>
-         <OurDomains/>
-         <Footer/>
-    </div>
+    
+      <div className="App">
+
+        <Landing_page />
+        <Aboutus />
+        <Aboutcode />
+        <Events />
+        <OurDomains />
+        <Footer />
+      </div>
   );
 }
 

@@ -5,7 +5,12 @@ body{
     background-color: black;
     color: white;
     font-family: 'Alegreya', serif;
+   
 }
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
 
 .landing_Page {
     font-family: 'Merriweather', serif;
@@ -26,7 +31,19 @@ body{
           background-color: #000;
           color: white;
           padding: 20px;
-
+          font-family: 'Roboto', sans-serif;
+          padding-inline: 4rem;
+}
+.closenav{
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    padding-inline:5px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-radius:4rem;
+    border-width: 1px;
+    background-color: #e2e2e2;
 }
 
 .navicon {
@@ -71,7 +88,18 @@ body{
     margin-bottom: 30px;
 }
 
-
+.home-quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-quote-top{
+    font-size: 4rem;
+}
+.home-quote-bottom{
+    font-size: 3rem;
+}
 
 
 
@@ -79,12 +107,18 @@ body{
     .logo-and-name{
         align-self: center;
     }
+    .hack-home-logo{
+        margin-top: -10rem;
+    }
     .section-links{
         display: none;
     }
     .navicon{
         display: block;
     }
+    .navbar {
+        padding-inline: 1rem;
+}
 
 }
 
@@ -96,6 +130,7 @@ body{
         background-size:35%;
         
     }
+
 }
 
 @media(max-width:1150px){
@@ -135,6 +170,18 @@ body{
     .home{
         font-size: 1.1rem;
     }
+    .home-quote{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-quote-top{
+        font-size: 1.5rem;
+    }
+    .home-quote-bottom{
+        font-size: 1.2rem;
+    }
  
 }
 
@@ -152,27 +199,14 @@ body{
     flex-direction: column;
     row-gap: 50px;
     opacity: 0.7;
+    
 }
-
-
-
-
-
-
-
-
 
 
 
 .hide{
     display: none;
 }
-
-
-
-
-
-
 
 
 
@@ -192,11 +226,12 @@ body{
     padding-right: 100px;
     display: flex;
     flex-direction: column;
-    color:grey;
+    color:rgb(238, 238, 238);
     padding-top: 50px;
     background: url("./assets/silkimg.png") top 5% left no-repeat,
                 url("./assets/bluesilk.png") bottom 65% right no-repeat,
                 url("./assets/p2.png")  bottom right no-repeat;
+    font-family: 'Roboto', sans-serif;
 }
 
 .event-info{
@@ -228,8 +263,8 @@ body{
 
 .event-content {
     font-size: 3.5rem;
-    font-weight: 1000; 
-
+    font-weight: 1000;
+    color : rgb(241, 241, 241);
 }
 
 
@@ -250,14 +285,19 @@ body{
         padding-left: 0px;
         padding-right: 0px;
     }
-    .event{
-        
-       
-    }
 }
 @media(max-width:680px){
+    .event{
+        height: 500px;
+    }
+    .events_section_title {
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+        font-weight: bold;
+       
+    }
     .event_image{
-        height: 200px;
+        height: 150px;
     }
     .event-content{
         font-size: 2rem;
@@ -269,7 +309,12 @@ body{
     }
     .event-info{
         font-size: 1rem;
-        border: #f5f5f5 solid;       
+    }
+    .Events-section{
+        background: url("./assets/silkimg.png") bottom 25% left / 100% no-repeat, /* Adjusted size */
+        url("./assets/bluesilk.png") bottom 60% right / 100% no-repeat, /* Adjusted size */ 
+        url("./assets/p2.png") bottom right / 90% no-repeat; /* Adjusted size */ 
+
     }
 }
 
@@ -308,8 +353,9 @@ h2{
   
   .domaininfo{
       text-align: center;
-      font-size: 1.15rem;
+      font-size: 1rem;
       margin: 0px;
+      font-family: 'Open Sans', sans-serif;
   }
 
 .card {
@@ -325,12 +371,12 @@ h2{
     mask-size: 800%;
     -webkit-mask-position: 0;
     mask-position: 0;
+    transition: transform 0.4s ease-in-out; /* Adjust timing and easing as needed */
   }
 
 .card:hover{
     border-color:#f5f5f5;
     transform: scale(1.1);
-
     transition: mask-position 2s ease,-webkit-mask-position 2s ease;
     -webkit-mask-position: 120%;
     mask-position: 120%;

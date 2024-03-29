@@ -20,9 +20,12 @@
 
 
 .about_section_title {
-   font-size: 3rem;
+   margin-top: 5rem;
+   font-size: 4rem;
    font-weight: bold;
    z-index: 2;
+   margin-bottom: 2rem;
+   
 }
 
 
@@ -40,7 +43,7 @@
    font-size:2rem;
    margin-bottom: 5rem;
    max-width: 80%;
-   
+   font-family: 'Open Sans', sans-serif;
 }
 .achievement_cards {
      z-index: 2;
@@ -58,6 +61,8 @@
    .about_section_title {
      font-size: 30px; 
      margin-bottom:1rem;
+     margin-top:0rem;
+     margin-bottom: 0rem;
    }
  
    .about_section_content {
