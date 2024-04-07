@@ -1,471 +1,448 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    min-height: 100vh;
-    background-color: black;
-    color: white;
-    font-family: 'Alegreya', serif;
-   
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  /* font-family: "Alegreya", serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .landing_Page {
-    font-family: 'Merriweather', serif;
-    background-origin: border-box;
-    background: url("./assets/landingpgright.png") right no-repeat
-    , url("./assets/landingpgleft.png") left no-repeat  ;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Merriweather", serif;
+  background-origin: border-box;
+  background: url("./assets/landingpgright.png") right no-repeat,
+    url("./assets/landingpgleft.png") left no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .navbar {
-          flex: 0 1 0%;
-          display: flex;
-          justify-content: space-around;
-          background-color: #000;
-          color: white;
-          padding: 20px;
-          font-family: 'Roboto', sans-serif;
-          padding-inline: 4rem;
+  flex: 0 1 0%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  padding-inline: 4rem;
 }
-.closenav{
-    position: absolute;
-    top:2rem;
-    right:2rem;
-    padding-inline:5px;
-    padding-top: 4px;
-    padding-bottom: 2px;
-    border-radius:4rem;
-    border-width: 0px;
-    background-color: #eeeeee;
+.closenav {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding-inline: 5px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  border-radius: 4rem;
+  border-width: 0px;
+  background-color: #eeeeee;
 }
 
 .navicon {
-    
-    position: relative;
-    top: 2px;
-    right: 2px;
-    display:none ;
+  position: relative;
+  top: 2px;
+  right: 2px;
+  display: none;
 }
 
 .logo-and-name {
-    font-size: 2rem;
-    flex: 1 1 auto;
+  font-size: 2rem;
+  flex: 1 1 auto;
 }
 
-.section-links{
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 auto;
-    align-items: center;
+.section-links {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  align-items: center;
 }
-.aboutus-link,.events-link,.team-link,.contact-link {
-    cursor: pointer;
-   
+.aboutus-link,
+.events-link,
+.team-link,
+.contact-link {
+  cursor: pointer;
 }
 .home {
-    flex: 1 1 auto;
-    font-size: 3.5rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex: 1 1 auto;
+  font-size: 3.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
 }
-
-
-
 
 .hack-home-logo {
-    height: 50vh;
-    margin-bottom: 30px;
+  height: 50vh;
+  margin-bottom: 30px;
 }
 
-.home-quote{
+.home-quote {
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-quote-top {
+  font-size: 4rem;
+}
+.home-quote-bottom {
+  font-size: 3rem;
+}
+
+@media (max-width: 750px) {
+  .logo-and-name {
+    align-self: center;
+  }
+  .hack-home-logo {
+    margin-top: -10rem;
+  }
+  .section-links {
+    display: none;
+  }
+  .navicon {
+    display: block;
+  }
+  .navbar {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .landing_Page {
+    background: url("./assets/landingpgright.png") top right no-repeat,
+      url("./assets/landingpgleft.png") top left no-repeat;
+    background-size: 35%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .home {
+    font-size: 2.5rem;
+  }
+  .logo-and-name {
+    font-size: 1.75rem;
+  }
+  .section-links {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .landing_Page {
+    background: black;
+  }
+  .logo-and-name {
+    font-size: 1.25rem;
+  }
+  .section-links {
+    font-size: 0.75rem;
+  }
+  .home {
+    font-size: 1.5rem;
+  }
+  .hack-home-logo {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .home {
+    font-size: 1.1rem;
+  }
+  .home-quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.home-quote-top{
-    font-size: 4rem;
-}
-.home-quote-bottom{
-    font-size: 3rem;
-}
-
-
-
-@media(max-width:750px){
-    .logo-and-name{
-        align-self: center;
-    }
-    .hack-home-logo{
-        margin-top: -10rem;
-    }
-    .section-links{
-        display: none;
-    }
-    .navicon{
-        display: block;
-    }
-    .navbar {
-        padding-inline: 1rem;
+  }
+  .home-quote-top {
+    font-size: 1.5rem;
+  }
+  .home-quote-bottom {
+    font-size: 1.2rem;
+  }
 }
 
+.bar-nav-links {
+  text-align: center;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 10rem;
+  padding: 50px;
+  padding-top: 100px;
+  background-color: white;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  opacity: 0.95;
+  font-weight: bold;
 }
 
-
-@media(max-width:1350px){
-    .landing_Page {
-        background: url("./assets/landingpgright.png") top right no-repeat
-    , url("./assets/landingpgleft.png") top left no-repeat  ;
-        background-size:35%;
-        
-    }
-
+.hide {
+  display: none;
 }
 
-@media(max-width:1150px){
-    .home{
-        font-size: 2.5rem;
-    }
-    .logo-and-name{
-        font-size: 1.75rem;
-    }
-    .section-links{
-        font-size: 1rem;
-    }
-
+.progress {
+  background-color: red;
+  height: 50px;
+  position: absolute;
 }
 
-@media(max-width:950px){
-    .landing_Page{
-        background:black;
-    }
-    .logo-and-name{
-        font-size: 1.25rem;
-    }
-    .section-links{
-        font-size: 0.75rem;
-    }
-    .home{
-        font-size: 1.5rem;
-        
-    }
-    .hack-home-logo {
-        height: 40vh;
-        
-    }
+.Events-section {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(238, 238, 238);
+  padding-top: 50px;
+  background: url("./assets/silkimg.png") top 5% left no-repeat,
+    url("./assets/bluesilk.png") bottom 65% right no-repeat,
+    url("./assets/p2.png") bottom right no-repeat;
+  font-family: "Roboto", sans-serif;
 }
 
-@media(max-width:450px){
-    .home{
-        font-size: 1.1rem;
-    }
-    .home-quote{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .home-quote-top{
-        font-size: 1.5rem;
-    }
-    .home-quote-bottom{
-        font-size: 1.2rem;
-    }
- 
+.event-info {
+  padding: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  align-self: flex-start;
 }
-
-.bar-nav-links{
-    text-align: center;
-    height: 100vh;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 10rem;
-    padding: 50px;
-    padding-top: 100px;
-    background-color: white;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    opacity: 0.95;
-    font-weight: bold;
-}
-
-
-
-.hide{
-    display: none;
-}
-
-
-
-
-.progress{
-    background-color:red;
-    height:50px;
-    position:absolute;
-    
-}
-
-
-
-.Events-section{
-   
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    flex-direction: column;
-    color:rgb(238, 238, 238);
-    padding-top: 50px;
-    background: url("./assets/silkimg.png") top 5% left no-repeat,
-                url("./assets/bluesilk.png") bottom 65% right no-repeat,
-                url("./assets/p2.png")  bottom right no-repeat;
-    font-family: 'Roboto', sans-serif;
-}
-
-.event-info{
-    padding: 5px;
-    font-size: 2rem;
-    font-weight: bold;
-    align-self: flex-start;
-}
-
 
 .events_section_title {
-    font-family: 'Merriweather', serif;
-    font-size: 3rem;
-    font-weight: bold;
-   
+  font-family: "Roboto", serif;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .event {
-   display:flex;
-   height: 100vh;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.event_image{
-    height: 500px;
-    
+.event_image {
+  height: 500px;
 }
 
 .event-content {
-    font-size: 3.5rem;
-    font-weight: 1000;
-    color : rgb(241, 241, 241);
+  font-size: 3.5rem;
+  font-weight: 1000;
+  color: rgb(241, 241, 241);
 }
 
-
-@media(max-width:1450px){
-    .event_image{
-        height: 350px;       
-     }
-    .event-info{
-        font-size: 1.5rem;
-    }    
+@media (max-width: 1450px) {
+  .event_image {
+    height: 350px;
+  }
+  .event-info {
+    font-size: 1.5rem;
+  }
 }
 
-@media(max-width:1130px){
-    .event_image{
-        height: 350px;       
-     }
-     .Events-section {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+@media (max-width: 1130px) {
+  .event_image {
+    height: 350px;
+  }
+  .Events-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
-@media(max-width:680px){
-    .event{
-        height: 500px;
-    }
-    .events_section_title {
-        font-family: 'Merriweather', serif;
-        font-size: 2rem;
-        font-weight: bold;
-       
-    }
-    .event_image{
-        height: 150px;
-    }
-    .event-content{
-        font-size: 2rem;
-    }
-    .Events-section {
-        padding-left: 0px;
-        padding-right: 0px;
-        background-size: 80%;
-    }
-    .event-info{
-        font-size: 1rem;
-    }
-    .Events-section{
-        background: url("./assets/silkimg.png") bottom 25% left / 100% no-repeat, /* Adjusted size */
-        url("./assets/bluesilk.png") bottom 60% right / 100% no-repeat, /* Adjusted size */ 
-        url("./assets/p2.png") bottom right / 90% no-repeat; /* Adjusted size */ 
-
-    }
+@media (max-width: 680px) {
+  .event {
+    height: 500px;
+  }
+  .events_section_title {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .event_image {
+    height: 150px;
+  }
+  .event-content {
+    font-size: 2rem;
+  }
+  .Events-section {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-size: 80%;
+  }
+  .event-info {
+    font-size: 1rem;
+    padding:2px;
+  }
+  .Events-section {
+    background: url("./assets/silkimg.png") bottom 25% left / 100% no-repeat,
+      /* Adjusted size */ url("./assets/bluesilk.png") bottom 60% right / 100%
+        no-repeat,
+      /* Adjusted size */ url("./assets/p2.png") bottom right / 90% no-repeat; /* Adjusted size */
+  }
 }
-
-
 
 /*Our domains css styles*/
 
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 50px;
-  }
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 50px;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 h1 {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-h2{
-    font-size: 25px;
-    text-align: center;
-  }
+  font-size: 50px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
 
-  .domainhead{
-      font-size: 2rem;
-      margin: 0px;
-  }
-  
-  .domaininfo{
-      text-align: center;
-      font-size: 1rem;
-      margin: 0px;
-      font-family: 'Open Sans', sans-serif;
-  }
+.domainhead {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.domaininfo {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
 
 .card {
-    border: 2px solid transparent;
-    padding: 100px;
-    box-sizing: border-box;
-    background: rgb(66, 81, 216);
-    border-radius: 10px;
-    padding: 20px;
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-    transition: transform 0.4s ease-in-out; /* Adjust timing and easing as needed */
-  }
+  border: 2px solid transparent;
+  padding: 100px;
+  box-sizing: border-box;
+  background: rgb(66, 81, 216);
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transition: transform 0.4s ease-in-out; /* Adjust timing and easing as needed */
+}
 
-.card:hover{
-    border-color:#f5f5f5;
-    transform: scale(1.1);
-    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
-    -webkit-mask-position: 120%;
-    mask-position: 120%;
-    opacity: 1;
-  }
+.card:hover {
+  border-color: #f5f5f5;
+  transform: scale(1.1);
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+}
 
+.footer-container {
+  border-top: #f5f5f5 solid;
+  display: flex;
+  text-align: left;
+  background-color: #0c0527;
+}
 
+.logo-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .footer-container {
-      border-top: #f5f5f5 solid;
-      display: flex;
-      text-align: left;
-     background-color: #0C0527;
-  }
+.contact-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
-  
+.follow-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
-  .logo-section {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.social-media-links {
+  display: flex;
+}
 
-  .contact-section {
-    display: flex;
-   align-items: flex-start;
-    flex-direction: column;
-    flex-grow: 1;
-  }
+.mail-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
 
-  .follow-section { 
-    display: flex;
-    align-items: flex-start;
-     flex-direction: column;   
-    flex-grow: 1;
-  }
+.phone-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
 
-  .social-media-links {
-      display: flex;
-  }
+.copyright {
+  font-size: 1rem;
+}
 
-  .mail-logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.25rem;
-  }
-
-  .phone-logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.25rem;
-  }
-
-
+@media (max-width: 860px) {
   .copyright {
-      font-size: 1rem;
+    font-size: 0.75rem;
   }
+  .mail-logo {
+    font-size: 1rem;
+  }
+  .phone-logo {
+    font-size: 1rem;
+  }
+}
 
-  @media(max-width:860px){
-      .copyright {
-          font-size: 0.75rem;
-      }
-      .mail-logo{
-         font-size: 1rem;
-      }
-      .phone-logo {
-         font-size: 1rem;
-      }
+@media (max-width: 600px) {
+  .logo {
+    height: 20px;
   }
-
-  @media(max-width:600px){
-      .logo{
-          height: 20px;
-      }
-      .copyright {
-        font-size: 0.5rem;
-    }
-    .mail-logo{
-       font-size: 0.75rem;
-    }
-    .phone-logo {
-       font-size: 0.75rem;
-    }
-    .footer-logo {
-        height: 80px;
-    }
-    .footer-head {
-        font-size: 1rem;
-    }
+  .copyright {
+    font-size: 0.5rem;
   }
+  .mail-logo {
+    font-size: 0.75rem;
+  }
+  .phone-logo {
+    font-size: 0.75rem;
+  }
+  .footer-logo {
+    height: 80px;
+  }
+  .footer-head {
+    font-size: 1rem;
+  }
+}

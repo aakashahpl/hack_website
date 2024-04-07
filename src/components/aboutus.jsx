@@ -2,6 +2,7 @@ import "../about.css"
 import {
     motion
   } from "framer-motion"
+import CountUp from "react-countup";
 function Aboutus() {
     return (
         <div className="About-section">
@@ -22,11 +23,11 @@ function Aboutus() {
             </motion.div>
             <div className="achievement_cards">
                 <div className="years_of_service">
-                    <div className="experience_number">11+</div>
+                    <div className="experience_number"><CountUp end={11} duration={6} enableScrollSpy={true} scrollSpyOnce={true}/>+</div>
                     <div className="card_content">years of experience</div>
                 </div>
                 <div className="number_of_events">
-                    <div className="experience_number">50+</div>
+                    <div className="experience_number"><CountUp end={50} duration={6} enableScrollSpy={true} scrollSpyOnce={true}/>+</div>
                     <div className="card_content">events organized</div>
                 </div>
             </div>

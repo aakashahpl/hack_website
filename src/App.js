@@ -6,7 +6,6 @@ import Aboutcode from "./components/aboutcode"
 import Newgallery from './components/newgalley';
 import Footer from './components/footer';
 import Aboutus from './components/aboutus';
-import { ChakraProvider } from '@chakra-ui/react'
 
 
 function App() {
@@ -19,6 +18,7 @@ function App() {
         <Aboutcode />
         <Events />
         <OurDomains />
+        <Newgallery/>
         <Footer />
       </div>
   );
